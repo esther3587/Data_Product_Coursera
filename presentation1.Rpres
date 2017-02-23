@@ -1,0 +1,47 @@
+
+Orange Tree Age Predictor
+========================================================
+author: Shun-Wen Chang   
+date: `r date()`
+
+Summary
+========================================================
+
+For the Developing Data Products Course Project, I have developed a Shiny Application for predicting orange trees age by using linear fit model on Orange dataset.
+
+
+Dataset
+========================================================
+The data we use is from datasets library.
+
+
+```{r,echo=TRUE}
+summary(Orange)
+
+```
+
+
+
+Model
+========================================================
+
+We use linear regression model lm to do the fitting.
+
+```{r, echo=TRUE}
+library(datasets)
+data(Orange)
+fit<- lm(age~circumference,data=Orange)
+plot(Orange$circumference,Orange$age, xlab = "Tree Circumference (mm)",ylab="Tree Age (year)",col = 'blue',pch=16,cex=1.5)
+abline(fit,lwd=2)
+        
+```
+
+Shiny App
+========================================================
+
+You can find this Shiny App at https://estherchang.shinyapps.io/OrangeTree/
+
+![application](treepredictor.png)
+
+More information and source code:
+https://github.com/esther3587/Data_Product_Coursera

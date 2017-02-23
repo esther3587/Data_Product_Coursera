@@ -1,5 +1,20 @@
-# Data_Product_Coursera
+##Instructions
 
-About this Course
+This peer assessed assignment has two parts. First, you will create a Shiny application and deploy it on Rstudio's servers. Second, you will use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.
 
-A data product is the production output from a statistical analysis. Data products automate complex analysis tasks or use technology to expand the utility of a data informed model, algorithm or inference. This course covers the basics of creating data products using Shiny, R packages, and interactive graphics. The course will focus on the statistical fundamentals of creating a data product that can be used to tell a story about data to a mass audience.
+Your Shiny Application
+
+    Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application.
+    Deploy the application on Rstudio's shiny server
+    Share the application link by pasting it into the provided text box
+    Share your server.R and ui.R code on github
+
+The application must include the following:
+
+    Some form of input (widget: textbox, radio button, checkbox, ...)
+    Some operation on the ui input in sever.R
+    Some reactive output displayed as a result of server calculations
+    You must also include enough documentation so that a novice user could use your application.
+    The documentation should be at the Shiny website itself. Do not post to an external link.
+
+The Shiny application in question is entirely up to you. However, if you're having trouble coming up with ideas, you could start from the simple prediction algorithm done in class and build a new algorithm on one of the R datasets packages. Please make the package simple for the end user, so that they don't need a lot of your prerequisite knowledge to evaluate your application. You should emphasize a simple project given the short time frame.
